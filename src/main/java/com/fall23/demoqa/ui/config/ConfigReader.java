@@ -24,4 +24,11 @@ public class ConfigReader {
 
         }
     }
+
+    public static String getValue(String key){
+        return properties.getProperty(key).trim();
+    }
+    public static void main(String[] args){
+        System.out.println(getValue("name"));
+    }
 }
